@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* This code effectively outlines the ICB */
+html {
+    outline: 10px dashed red;
+    outline-offset: -10px;
+}
+
+#debug,
+#visualviewport,
+#layoutviewport {
+    padding: 1em;
+    overflow-y: hidden;
+    pointer-events: none;
+}
+
+#layoutviewport {
+    position: fixed;
+    inset: 0;
+    border: 5px dotted blue;
+    z-index: 999;
+}
+
+.someClass {
+    width: 100%;
+    height: 20px;
+}
